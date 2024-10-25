@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planssi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: "Open Sans";
+            src: url('../../assets/fonts/OpenSans-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: "Open Sans Bold";
+            src: url('../../assets/fonts/OpenSans-Bold.ttf');
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            /* Use flexbox for centering */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            height: 100vh;
+            /* Make the body fill the viewport height */
+            margin: 0;
+            /* Remove default margin *
+
+        }
+
+        #content {
+            text-align: center;
+            animation: fadeIn 2s; /* Add a fade-in animation */
+        }
+
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .scaleAnimation {
+            animation: scaleIn 1s;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .content {
+            animation: pulse 15s ;
+        }
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+          
+
+            100% {
+                transform: scale(8);
+            }
+        }
+    </style>
+</head>
+
+<body class="border-2 border-gray-500 border-solid">
+    <div class="content" id="content">
+        <h1 class="text-4xl" id="header"></h1>
+        <p class="text-lg bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent animate-gradient"
+            id="subtext"></p>
+    </div>
+    <!-- Include any JavaScript libraries you need here -->
+    <script src="jak.js"></script>
+</body>
+
+</html>
